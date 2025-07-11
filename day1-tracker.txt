@@ -1,0 +1,110 @@
+Git
+distribution version control system
+- easily recover files
+- who introduced an issue and when
+- roll back to previously working state
+ 
+Git feature
+-snapshot not diference
+-almost every operation is local
+-git has itegrity
+- git generally only adds data
+
+Git installation
+-git command line tool
+-git bash(terminal program)
+ 
+git commands
+
+git config --global user.name "Rajendra" -----to set username
+git config --global user.email "singh27.rajendra@gmail.com" ----to set email address
+
+---to check the username
+ git config user.name
+
+----to check email address
+git config user.email
+
+-----------------Three stage architecture------------------------------------------------------------------------------------------------------------------
+working directory --->The actual files and folders we're working with on your system.
+staging area      --->A place to prepare our changes before committing.
+git directory(repository)--->the actual database where Git stores all versions (commits) of our project.
+
+---------------Tracking Our first Git Project | Git Tutorials #4---------------------------------------------------------------------------------------
+
+1=> git status
+2=> git init (git initialization)
+3=> git add --a(adding the changes)
+4=> git commit -m "i have changes few things"(sending message)
+5=> git log (show all the changes)
+
+--------------------------------git clone------------------------------------------------------------------------------------------------------
+(Linux commands pwd(present working drectory) , ls(list), cd(change directory))
+1--->copy the link from the git
+2---> git clone and paste the link here
+git clone https://github.com/tensorflow/tensorflow.git
+
+-------------------------------git ignore-------------------------------------------------------------------------------------------------------------
+touch error.log (touch to create a file)
+touch .gitignore
+
+if we want to ignore all the files with name .log then write(*.log in gitignore file)
+
+--------------------------------git diff-------------------------------------------------------------------------------------------------------
+
+ git diff =>compares the staging area with working directory
+
+ git diff --staged =>compares last comment with current staging area
+
+------------------------- Skipping The Staging Area --------------------------------------------------------------------------------------------
+git commit -a -m "Your commit message"
+
+"It’s basically a shortcut to do both add and commit in one line—but only for files Git already knows about (i.e. tracked files)"
+
+-------------------------Moving and Renaming Files In Git----------------------------------------------------------------------------------------------
+to remove-->
+git rm text.txt
+
+to rename-->
+git mv last.txt firstOne.txt
+
+------------------------Git Log: Viewing & Changing Commits In Git--------------------------------------------------------------------------------------
+1=> git log -p (Review what changes were made in each commit)
+2=> git log -p -2 (will show the last 2 commits in your Git history)
+3=> git log --pretty=oneline (It shows the commit history in a simplified, one-line format for each commit)
+4=> git log --pretty=short(commit history with short information for each commit.)
+5=> git log --pretty=full (commit history with more detailed information for each commit.)
+6=> git log --since=2.days (intended to show commits made in the last 2 days)
+7=> git log --pretty=format:"%h -- %ae" (formats the Git log output in a custom way)
+8=> git commit --amend (Replaces your last commit with a new one)
+
+---------------------------------------------Unstaging & Unmodifying Files In Git----------------------------------------------------------------------
+1=> git checkout -- firstOne.txt (Restores the file firstOne.txt to the version from the last committed state)
+2=> git checkout -f (reverts all modified files in your working directory to their last committed state)
+
+
+---------------------------------------------GitHub: Working with Remote Repositories------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
