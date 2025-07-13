@@ -84,5 +84,11 @@
         <button type="submit">Submit</button>
       </form>
     </div>
+    <script>
+      // Only allow digits in phone input
+      document.getElementById('phone').addEventListener('input', function (e) {
+        this.value = this.value.replace(/[^0-9]/g, '')
+      })
+    </script>
   </body>
 </html>
